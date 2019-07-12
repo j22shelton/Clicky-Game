@@ -7,7 +7,7 @@ import "./App.css";
 
 let correctGuesses = 0;
 let bestScore = 0;
-let clickMessage = "Click on a different tarot card each time to gain points! If you click on the same card twice, you lose!";
+let clickMessage = "Pick a different tarot card 12 times in a row to win! Don't pick the same card twice!";
 
 class App extends Component {
     
@@ -35,7 +35,7 @@ class App extends Component {
             console.log ("Best Score: " + bestScore);
 
             correctGuesses = 0;
-            clickMessage = "Sorry, this card was already clicked"
+            clickMessage = "You lose! The card was already clicked. Play again!!"
 
             for (let i = 0 ; i < matches.length ; i++){
                 matches[i].clicked = false;
@@ -54,7 +54,7 @@ class App extends Component {
             // increment counter
             correctGuesses++;
             
-            clickMessage = "Keep going, nice job!";
+            clickMessage = "Keep going, you're on a roll!";
 
             if (correctGuesses > bestScore){
                 bestScore = correctGuesses;
@@ -77,7 +77,7 @@ class App extends Component {
             correctGuesses = 0;
 
             //winner msg
-            clickMessage = "Winner!!";
+            clickMessage = "Congrats, Winner!!";
             bestScore = 12;
             this.setState({ bestScore });
             
@@ -99,7 +99,7 @@ class App extends Component {
     render() {
         return (
             <Wrapper>
-                <Title>Clickity Clack Movie Game</Title>
+                <Title>Tarot Card Game</Title>
         
                 <h3 className="scoreSummary">
                     {this.state.clickMessage}
