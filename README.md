@@ -16,3 +16,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Deployed link: [https://j22shelton.github.io/Clicky-Game/]
 
+
+![Screenshot 2019-08-12 18 26 03](https://user-images.githubusercontent.com/47063288/62902863-eafb6500-bd2e-11e9-8bf7-ede6bbb60237.png)
+
