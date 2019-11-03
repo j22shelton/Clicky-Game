@@ -9,10 +9,7 @@ Once the user's score is reset after an incorrect guess, the game restarts.
 
 React, ES6, Bootstrap, CSS
 
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Clone, install dependencies, and open [http://localhost:3000](http://localhost:3000) to view it in your local browser.
 
 Deployed link: [https://j22shelton.github.io/Clicky-Game/]
 
